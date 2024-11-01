@@ -1,27 +1,42 @@
 {
   "expo": {
-    "name": "wordwhiz",
+    "name": "Word Whiz - Category Puzzle",
     "slug": "wordwhiz",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
+    "userInterfaceStyle": "dark",
     "splash": {
       "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "resizeMode": "cover",
+      "backgroundColor": "#152238"
     },
+    "plugins": [
+      "@react-native-google-signin/google-signin",
+      "expo-font"
+    ],
     "ios": {
       "supportsTablet": true
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+        "backgroundColor": "#152238"
+      },
+      "package": "com.hillztech.wordwhiz"
+      
+
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/adaptive-icon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "b8f126fb-8702-4957-8a8e-95e95f7a5fe8"
+      }
     }
+  },
+  "react-native-google-mobile-ads": {
+    "android_app_id": "ca-app-pub-1458204118033702~9895205659"
   }
 }
